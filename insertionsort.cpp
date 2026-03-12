@@ -6,12 +6,23 @@ int n;
 
 void input()
 {
-    cout << "Masukan Jumlah Data Pada Array : ";
-    cin >> n;
+    while (true)
+    {
+        cout << "Masukan Jumlah Data Pada Array : ";
+        cin >> n;
+
+        if (n <= 20)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\nArray Tidak Boleh Lebih dari 20\n";
+        }
+    }
 }
 
 int main()
 {
     input();
-    return 0;
 }
